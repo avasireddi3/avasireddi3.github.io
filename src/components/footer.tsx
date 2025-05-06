@@ -12,14 +12,14 @@ const Footer = () => {
 
           <div className="flex items-center gap-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:avasireddi3@gmail.com"
               aria-label="Email"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/avasireddi3"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -28,7 +28,7 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/aditya-vasireddi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -37,7 +37,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/Resume_Aditya_Vasireddi.pdf"
               target="_blank"
               aria-label="Resume"
               className="text-muted-foreground hover:text-primary transition-colors"
