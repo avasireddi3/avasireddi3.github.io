@@ -10,11 +10,13 @@ export default function AboutPage() {
       "SQL",
       "JavaScript",
       "React",
-      "Next.js",
+      "FastAPI",
       "Airflow",
       "dbt",
       "BigQuery",
-      "Snowflake",
+      "Redshift",
+      "GCP",
+      "AWS",
       "Tableau",
       "Power BI",
     ],
@@ -23,7 +25,6 @@ export default function AboutPage() {
       "Requirements Gathering",
       "Process Optimization",
       "Stakeholder Management",
-      "Project Management",
       "Agile Methodologies",
     ],
   }
@@ -37,7 +38,7 @@ export default function AboutPage() {
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20">
               <img
                 src="/placeholder.svg?height=256&width=256"
-                alt="Profile Photo"
+                alt="Profile"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -45,18 +46,17 @@ export default function AboutPage() {
 
           <div className="w-full md:w-2/3 space-y-4">
             <h1 className="text-4xl font-bold tracking-tighter">About Me</h1>
-            <p className="text-xl text-muted-foreground">
+            {/* <p className="text-xl text-muted-foreground">
               Business Analyst transitioning to Data Engineering & Full Stack Development
-            </p>
+            </p> */}
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a business analyst with over 5 years of experience working with data and business processes, now
-                transitioning into technical roles in data engineering and full stack development.
+                I am a full stack analytics engineer with a background in business analysis and a passion for
+                building data-driven solutions.
               </p>
               <p>
-                My background in business analysis has given me a unique perspective on how technology can solve real
-                business problems. I combine technical skills with business acumen to build solutions that are not just
-                technically sound but also aligned with business objectives.
+                Having worked in an environment where I was answerable to multiple stakeholders, I take pride in strong communication skills
+                and the ability to collaborate effectively with cross-functional teams.
               </p>
               <p>
                 I'm passionate about data pipelines, analytics dashboards, and building full stack applications that
@@ -92,22 +92,6 @@ export default function AboutPage() {
                 </div>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Business Skills</CardTitle>
-                <CardDescription>Professional capabilities from my BA background</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {skills.business.map((skill) => (
-                    <div key={skill} className="px-3 py-1 bg-secondary text-secondary-foreground rounded-md text-sm">
-                      {skill}
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
@@ -118,37 +102,42 @@ export default function AboutPage() {
           <div className="space-y-6">
             <div className="relative pl-8 border-l-2 border-muted pb-8">
               <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
-              <h3 className="text-xl font-semibold">Senior Business Analyst</h3>
-              <p className="text-muted-foreground">Company Name • 2020 - Present</p>
+              <h3 className="text-xl font-semibold">Analyst</h3>
+              <p className="text-muted-foreground">Inmobi • 2020 - Present</p>
               <div className="mt-2 text-muted-foreground">
-                <p>
-                  Led requirements gathering and process optimization initiatives for data-driven projects. Collaborated
-                  with technical teams to implement analytics solutions and dashboards.
-                </p>
+                <ul className="list-disc list-inside space-y-3">
+                  <li>
+                    Devised strategic plans and data driven analyses for set of 100 Microsoft Advertising accounts resulting in an annual increase in revenue by 10%
+                  </li>
+                  <li>
+                    Introduced automation in internal reporting with VBA scripts reducing task completion time by upto 50% and saving 30 minutes on a daily basis
+                  </li>
+                  <li>
+                    Created proof-of-concept Power BI dashboards to track advertising KPIs for actionable items reducing issue response time significantly
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div className="relative pl-8 border-l-2 border-muted pb-8">
               <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
-              <h3 className="text-xl font-semibold">Business Analyst</h3>
-              <p className="text-muted-foreground">Company Name • 2018 - 2020</p>
+              <h3 className="text-xl font-semibold">Intern</h3>
+              <p className="text-muted-foreground">Inmobi • 2018 - 2020</p>
               <div className="mt-2 text-muted-foreground">
-                <p>
-                  Analyzed business processes and identified opportunities for automation and improvement. Created
-                  reports and dashboards to visualize key business metrics.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative pl-8 border-l-2 border-muted">
-              <div className="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1"></div>
-              <h3 className="text-xl font-semibold">Junior Business Analyst</h3>
-              <p className="text-muted-foreground">Company Name • 2016 - 2018</p>
-              <div className="mt-2 text-muted-foreground">
-                <p>
-                  Supported data analysis and reporting initiatives. Assisted in requirements gathering and
-                  documentation.
-                </p>
+              <ul className="list-disc list-inside space-y-3">
+                  <li>
+                  Streamlined recommendation processes for the North America Account Strategy team by compiling and
+                  visualizing key metrics, leading to an improvement in client response rate by 20%
+                  </li>
+                  <li>
+                  Created Quarterly Business Reports on a monthly basis for 30 accounts, analyzing performance and
+                  scope to improve for clients’ campaigns
+                  </li>
+                  <li>
+                  Compiled data to resolve technical issues clients were facing in their marketing campaigns on a regular
+                  basis
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
