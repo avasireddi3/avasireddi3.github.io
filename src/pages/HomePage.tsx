@@ -7,11 +7,12 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function HomePage() {
   // Featured project data
   const featuredProject = {
-    title: "Data Pipeline Automation",
-    description: "Automated ETL pipeline using Airflow and BigQuery for real-time analytics dashboards.",
+    title: "Fantasy Premier League Wrapped",
+    description: "FPL analytics dashboard that processes league data to generate season summaries, highlighting top performers through award-style metrics",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Data Engineering", "Python", "Airflow", "BigQuery"],
-    github: "https://github.com",
+    tags: ["Data Analytics", "Python", "SQL", "Seaborn", "Matplotlib"],
+    category: "analytics",
+    github: "https://github.com/avasireddi3/FPLWrapped",
     demo: "https://demo-link.com",
   }
 
@@ -112,7 +113,7 @@ export default function HomePage() {
               <ul className="list-disc pl-5 space-y-2">
                 <li>Python, SQL, Pandas</li>
                 <li>Airflow, dbt</li>
-                <li>BigQuery, Snowflake</li>
+                <li>BigQuery, Redshift</li>
                 <li>ETL/ELT Pipelines</li>
               </ul>
             </CardContent>
@@ -134,12 +135,12 @@ export default function HomePage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Full Stack Development</CardTitle>
+              <CardTitle>Full Stack</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="list-disc pl-5 space-y-2">
-                <li>React, Next.js</li>
-                <li>Node.js, Express</li>
+                <li>HTML, CSS</li>
+                <li>React, Javascript</li>
                 <li>RESTful APIs</li>
                 <li>Responsive Design</li>
               </ul>
