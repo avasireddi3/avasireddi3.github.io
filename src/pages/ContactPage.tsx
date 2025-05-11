@@ -29,7 +29,7 @@ export default function ContactPage() {
       title: "Resume",
       description: "Download my resume",
       icon: FileText,
-      href: "/Resume_Aditya_Vasireddi.pdf",
+      href: "/resume.html",
       linkText: "Download Resume (PDF)",
     },
   ]
@@ -57,7 +57,7 @@ export default function ContactPage() {
               <CardContent>
                 <a
                   href={link.href}
-                  target={link.title === "Email" || link.title === "Resume" ? "_self" : "_blank"}
+                  target={link.title === "Email" ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
