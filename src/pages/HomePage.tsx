@@ -3,18 +3,12 @@ import { ArrowRight, Github, ExternalLink } from "lucide-react"
 import { Button } from "../components/ui/button"
 import { Badge } from "../components/ui/badge"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
+import ProjectCarousel from "components/ProjectCarousel"
+import { projects } from "../data/projects"
 
 export default function HomePage() {
   // Featured project data
-  const featuredProject = {
-    title: "Fantasy Premier League Wrapped",
-    description: "FPL analytics dashboard that processes league data to generate season summaries, highlighting top performers through award-style metrics",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Data Analytics", "Python", "SQL", "Seaborn", "Matplotlib"],
-    category: "analytics",
-    github: "https://github.com/avasireddi3/FPLWrapped",
-    demo: "https://demo-link.com",
-  }
+  const featuredProject = projects[0]
 
   return (
     <div className="flex flex-col gap-16 py-8 md:py-16">
@@ -51,13 +45,7 @@ export default function HomePage() {
         </div>
 
         <Card className="overflow-hidden">
-          <div className="aspect-video relative">
-            <img
-              src={featuredProject.image || "/placeholder.svg"}
-              alt={featuredProject.title}
-              className="object-cover w-full h-full"
-            />
-          </div>
+          <ProjectCarousel images={featuredProject.images} title={featuredProject.title} />
           <CardHeader>
             <CardTitle>{featuredProject.title}</CardTitle>
             <CardDescription>{featuredProject.description}</CardDescription>

@@ -6,50 +6,8 @@ import { Button } from "../components/ui/button"
 import { Badge } from "../components/ui/badge"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import { Input } from "../components/ui/input"
-
-// Project data
-const projects = [
-  {
-    id: 1,
-    title: "Fantasy Premier League Wrapped",
-    description: "FPL analytics dashboard that processes league data to generate season summaries, highlighting top performers through award-style metrics",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Data Analytics", "Python", "SQL", "Seaborn", "Matplotlib"],
-    category: "analytics",
-    github: "https://github.com/avasireddi3/FPLWrapped",
-    demo: "https://demo-link.com",
-  },
-  {
-    id: 2,
-    title: "Kernels - a Movie Recommender",
-    description: "Full stack application to track movies watched and recieve ML-based movie recommendations.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Full Stack", "React", "Postgres", "SQL", "FastAPI"],
-    category: "fullstack",
-    github: "https://github.com/avasireddi3/MovieWebsite",
-    demo: "https://demo-link.com",
-  },
-  {
-    id: 3,
-    title: "Used Cars Pipeline",
-    description: "Data pipeline to collect, transform, and load used car data from multiple sources.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Data Engineering", "Airflow", "Python", "SQL", "Polars", "Docker"],
-    category: "data",
-    github: "https://github.com/avasireddi3/used_cars_pipeline",
-    demo: "https://demo-link.com",
-  },
-  {
-    id: 4,
-    title: "Automated Ecommerce Reports ",
-    description: "Analytics tool to generate reports on sales, inventory of quick commerce platforms in India",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Data Analytics", "Python", "Pandas", "Docker"],
-    category: "analytics",
-    github: "https://github.com",
-    demo: "https://demo-link.com",
-  }
-]
+import ProjectCarousel from "../components/ProjectCarousel"
+import { projects } from "../data/projects"
 
 // Categories for filtering
 const categories = [
@@ -116,13 +74,7 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
               <Card key={project.id} className="overflow-hidden flex flex-col h-full">
-                <div className="aspect-video relative">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
+                <ProjectCarousel images={project.images} title={project.title} className="rounded-t-lg" />
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
