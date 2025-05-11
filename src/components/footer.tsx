@@ -42,15 +42,16 @@ const Footer = () => {
               aria-label="Resume"
               className="text-muted-foreground hover:text-primary transition-colors"
               rel="noreferrer"
+              download
             >
               <FileText className="h-5 w-5" />
             </a>
           </div>
         </div>
 
-        <div className="mt-8 text-center text-sm text-muted-foreground">
+        {/* <div className="mt-8 text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
